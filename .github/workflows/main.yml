@@ -25,6 +25,8 @@ jobs:
         run: |
           npm i
           npm run build
+      - name: Run tests
+        run: ng test
       #- name: Push Build to Releases
       #  uses: ncipollo/release-action@v1
       #  with:

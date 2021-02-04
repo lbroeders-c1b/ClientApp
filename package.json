@@ -8,6 +8,7 @@
     "build": "ng build --extract-css",
     "build:ssr": "npm run build -- --app=ssr --output-hashing=media",
     "build:ci": "npm run clean && npm run test && npm run build",
+    "clean": "rimraf ./dist",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

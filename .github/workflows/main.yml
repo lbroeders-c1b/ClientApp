@@ -24,7 +24,11 @@ jobs:
       - name: npm install and npm run build and test
         run: |
           npm i
-          npm run build:ci
+          # npm run build:ci
+          npm run build
+      - name: sast-scan
+        uses: AppThreat/sast-scan-action@1.0.2
+
       #- name: Push Build to Releases
       #  uses: ncipollo/release-action@v1
       #  with:

@@ -2,7 +2,7 @@ on: push
 name: Build Angular
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     strategy:
       matrix:
         node-version: [12.x]

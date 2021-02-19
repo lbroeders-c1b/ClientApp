@@ -18,6 +18,6 @@ jobs:
       - name: Login to DockerHub Registry
         run: echo ${{ secrets.DOCKERHUB_PASSWORD }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin      
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag pjlamb12/angular-cli:${GITHUB_SHA}
+        run: docker build . --file Dockerfile --tag lbroedersc1b/c1bpoc:${GITHUB_SHA}
       - name: Push the tagged Docker image
-        run: docker push pjlamb12/angular-cli:${GITHUB_SHA}
+        run: docker push lbroedersc1b/c1bpoc:${GITHUB_SHA}
